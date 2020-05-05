@@ -129,6 +129,7 @@ export class SettingUpModalComponent implements OnInit {
                 videoSource: this.localUser.getVideoSource(),
                 publishAudio: this.localUser.isAudioActive(),
                 publishVideo: this.localUser.isVideoActive(),
+                resolution: '1920x1080',
                 mirror: !this.localUser.isBackCamera()
             })
                 .then((publisher: Publisher) => {
